@@ -1,0 +1,37 @@
+------------
+-- HOME PAGE--
+------------
+*login
+	*required: yes
+	
+*header: This is STAT 157 Project*
+
+This project is for to conduct deliberate practice on forecasting the prices of commodities.
+
+*button: START
+
+------------
+-- PAGE 2 --
+------------
+>> total_score = 0
+
+*label: startLabel
+
+#{total_score}:
+
+*randomize: 1
+	*name: catIdioms
+	*everytime
+	------
+	------
+	
+	
+	
+	------
+	------
+	
+
+*Correct price is ${price}*
+*button: One more!
+>> total_score = total_score + 1
+*goto: startLabel
